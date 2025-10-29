@@ -70,7 +70,6 @@ function Header() {
             <nav>
                <a href='#projects'>Проекты</a>
                <a href='#stack'>Стек</a>
-               <a href='#reviews'>Отзывы</a>
                <a href='#about-me'>Обо мне</a>
                <a href='#contacts'>Контакты</a>
             </nav>
@@ -92,7 +91,6 @@ function Header() {
             <div onClick={handleCloseNavigation} className={styles['nav-content']}>
                <a href='#projects'>{point} Проекты</a>
                <a href='#stack'>{point} Стек</a>
-               <a href='#reviews'>{point} Отзывы</a>
                <a href='#about-me'>{point} Обо мне</a>
                <a href='#contacts'>{point} Контакты</a>
             </div>
