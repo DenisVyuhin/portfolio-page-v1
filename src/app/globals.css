@@ -355,7 +355,7 @@ h1.block-name::before {
    transform: translateX(-50%);
 }
 .about-me-container {
-   background-color: #0e0e11;
+   background-color: var(--background-color);
    border: 1px solid var(--panel-color);
    border-radius: 15px;
    width: 100%;
