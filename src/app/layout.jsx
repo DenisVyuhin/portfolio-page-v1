@@ -17,20 +17,20 @@ export const metadata = {
 export default function RootLayout({ children }) {
    return (
       <html lang="ru" className={montserrat.variable}>
-         <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: '-999' }}>
-            <Particles
-               particleColors={['#0095ff', '#0095ff']}
-               particleCount={200}
-               particleSpread={10}
-               speed={0.1}
-               particleBaseSize={50}
-               moveParticlesOnHover={true}
-               alphaParticles={false}
-               disableRotation={false}
-            />
-         </div>
-         <Header />
          <body>
+            <Header />
+            <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: '-999' }}>
+               <Particles
+                  particleColors={['#0095ff', '#0095ff']}
+                  particleCount={200}
+                  particleSpread={10}
+                  speed={0.1}
+                  particleBaseSize={50}
+                  moveParticlesOnHover={true}
+                  alphaParticles={false}
+                  disableRotation={false}
+               />
+            </div>
             <ThemeProvider>
                {children}
             </ThemeProvider>

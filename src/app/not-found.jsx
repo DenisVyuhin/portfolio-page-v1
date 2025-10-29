@@ -1,6 +1,6 @@
-import Aurora from "@/Components/Animations/Aurora.jsx";
 import Particles from "@/Components/Animations/Particles.jsx";
 
+export const dynamic = "force-dynamic";
 
 function NotFound() {
    return (
