@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 function useSystemTheme() {
-   const [theme, setTheme] = useState("light"); // значение по умолчанию
+   const [theme, setTheme] = useState("dark"); // значение по умолчанию
 
    useEffect(() => {
       if (typeof window !== "undefined" && window.matchMedia) {

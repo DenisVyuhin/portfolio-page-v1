@@ -2,22 +2,22 @@
 
 
 :root {
-   --background-color: #ffffff;
-   --blur-background-color: rgba(255, 255, 255, .75); /* специально для тех блоков, которые имеют полупрозрачный фон и размытие заднего фона */
-   --panel-color: #e6e6e6;
-   --button-color: #e6e6e6;
-   --main-text: #0d0d0d;
-   --simple-text: #4d4d4d;
-   --accent-color-1: #0095ff;
-   --accent-color-2: #0070e0;
-}
-[theme="dark"] {
    --background-color: #0a0a0c;
    --blur-background-color: rgba(10, 10, 12, .75); /* специально для тех блоков, которые имеют полупрозрачный фон и размытие заднего фона */
    --panel-color: #1f1f21;
    --button-color: #303033;
    --main-text: #f2f2f2;
    --simple-text: #b3b3b3;
+   --accent-color-1: #0095ff;
+   --accent-color-2: #0070e0;
+}
+[theme="light"] {
+   --background-color: #ffffff;
+   --blur-background-color: rgba(255, 255, 255, .75); /* специально для тех блоков, которые имеют полупрозрачный фон и размытие заднего фона */
+   --panel-color: #e6e6e6;
+   --button-color: #e6e6e6;
+   --main-text: #0d0d0d;
+   --simple-text: #4d4d4d;
    --accent-color-1: #0095ff;
    --accent-color-2: #0070e0;
 }

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import styles from './Header.module.css';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 
 function Header() {
@@ -35,6 +35,11 @@ function Header() {
       });
    }
 
+   // Принудительно меняем фон у body
+   useEffect(() => {
+      document.body.style.backgroundColor = "var(--background-color)";
+   }, [theme]);
+
    const handleButtonClick = () => {
       const html = document.documentElement;
       let currentTheme = html.getAttribute("theme");
@@ -43,9 +48,9 @@ function Header() {
       setTheme(newTheme);
       html.setAttribute("theme", newTheme);
    }
-   
+
    const point = <>
-      <b style={{color: "var(--accent-color-1)"}}>&gt;</b> 
+      <b style={{ color: "var(--accent-color-1)" }}>&gt;</b>
    </>
 
    const handleOpenNavigation = () => {

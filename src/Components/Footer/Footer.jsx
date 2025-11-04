@@ -5,7 +5,7 @@ function Footer() {
    return (
       <footer className={styles.footer}>
          <div className={styles.container}>
-            &copy;KodersUp {new Date().getFullYear()} | Разработано на React | <a href="https://github.com/DenisVyuhin/portfolio-page-v1">Этот проекта на GitHub</a>
+            &copy;KodersUp {new Date().getFullYear()} ⠀<b>•</b>⠀ Разработано на React ⠀<b>•</b>⠀ <a href="https://github.com/DenisVyuhin/portfolio-page-v1">Этот проекта на GitHub</a>
          </div>
       </footer>
    );

@@ -127,6 +127,11 @@
    font-size: large;
    color: var(--main-text);
    cursor: pointer;
+   transition: all .25s;
+}
+
+.logo:hover {
+   opacity: 0.75;
 }
 
 .header a {
