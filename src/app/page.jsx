@@ -135,6 +135,9 @@ function Home() {
                </div>
             </div>
          </div>
+         
+         {/* Футер в main - глупо, я в курсе */}
+         <Footer />
       </main>
    );
 }
