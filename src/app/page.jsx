@@ -32,9 +32,9 @@ function Home() {
             <hr />
             <h1 id="projects" className="block-name">Проекты</h1>
             <div className="projects-grid">
-               <ProjectCard name="Техно-комания"  img="project_2.png" link="/projects"                      gitlink="https://github.com/DenisVyuhin/" />
-               <ProjectCard name="Телеграм бот"   img="prprp.png"     link="https://t.me/iu_infohelper_bot" gitlink="https://github.com/DenisVyuhin/" />
-               <ProjectCard name="Сайт портфолио" img="rdd.png"       link="https://mrhexvel.vercel.app/"   gitlink="https://github.com/DenisVyuhin/" />
+               <ProjectCard name="Telegram бот" img="iuhelper-tg-bot.png" link="https://t.me/iu_helper_bot" gitlink="https://github.com/DenisVyuhin/IU-Helper-v2.0" />
+               <ProjectCard name="Техно-комания" img="project_2.png" link="/projects" gitlink="https://github.com/DenisVyuhin/" />
+               <ProjectCard name="Сайт портфолио" img="rdd.png" link="https://mrhexvel.vercel.app/" gitlink="https://github.com/DenisVyuhin/" />
                <ProjectCard name="AI-чат прямо на телефоне" img="project_1.jpg" link="/projects" gitlink="https://github.com/DenisVyuhin/" />
                <ProjectCard name="AI-чат прямо на телефоне" img="project_1.jpg" link="/projects" gitlink="https://github.com/DenisVyuhin/" />
                <ProjectCard name="AI-чат прямо на телефоне" img="project_1.jpg" link="/projects" gitlink="https://github.com/DenisVyuhin/" />
