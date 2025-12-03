@@ -13,7 +13,7 @@ function Home() {
 
          <div className="hero-wrapper">
             <div className="hero-content">
-               <Image className="hero-image" src="/hero-logo-brain.png" alt="hero image" width="400" height="400" priority={true} />
+               <Image className="hero-image" src="/hero-logo-brain.png" alt="hero image" width="400" height="400" priority />
                <div className="hero-text">
                   <h1>
                      <TextType className="text-type"
