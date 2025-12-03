@@ -3,6 +3,7 @@
 import Footer from "@/Components/Footer/Footer.jsx";
 import ProjectCard from "@/Components/ProjectCard/ProjectsCard.jsx";
 import TextType from "@/Components/Animations/TextType.jsx";
+import Image from "next/image";
 
 
 function Home() {
@@ -12,7 +13,7 @@ function Home() {
 
          <div className="hero-wrapper">
             <div className="hero-content">
-               <img className="hero-image" src="hero-logo-brain.png" alt="hero image" />
+               <Image className="hero-image" src="/hero-logo-brain.png" alt="hero image" width="400" height="400" priority={true} />
                <div className="hero-text">
                   <h1>
                      <TextType className="text-type"
