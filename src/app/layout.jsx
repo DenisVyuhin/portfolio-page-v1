@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import ThemeProvider from "@/Utils/ThemeProvider.jsx";
 import { Montserrat } from "next/font/google";
 import "./globals.css";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
    return (
       <html lang="ru" className={montserrat.variable}>
          <body>
+            <SpeedInsights/>
             <Header />
             <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: '-999' }}>
                <Particles
