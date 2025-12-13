@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
    return (
       <html lang="ru" className={montserrat.variable}>
          <body>
-            <SpeedInsights/>
             <Header />
             <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: '-999' }}>
                <Particles
@@ -42,6 +41,7 @@ export default function RootLayout({ children }) {
             <ThemeProvider>
                {children}
             </ThemeProvider>
+            <SpeedInsights/>
          </body>
       </html>
    );
