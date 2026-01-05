@@ -372,8 +372,7 @@ h1.block-name::before {
 }
 .about-me-container p {
    margin: 0;
-   letter-spacing: 0.5px;
-   word-spacing: 10%;
+   word-spacing: 7%;
 }
 .about-me-container hr {
    width: 300px;
