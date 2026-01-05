@@ -1,6 +1,8 @@
 "use client";
 
 import styles from './ProjectCard.module.css';
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 
 function ProjectCard(props) {
@@ -10,6 +12,33 @@ function ProjectCard(props) {
    }
 
    return (
+      <div className={styles.card}>
+         <div className={styles.image} style={{
+            backgroundImage: `url(${props.img})`,
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            backgroundRepeat: 'no-repeat'
+         }}></div>
+
+         <div className={styles['right-side']}>
+            <h2>{props.name}</h2>
+            <p>{props.description}</p>
+            
+            <div className={styles["buttons-container"]}>
+               <button className={styles['open']} onClick={() => openLink(`${props.link}`)}>
+                  <FaExternalLinkAlt size={15}/>
+                  Открыть
+               </button>
+               <button className={styles['github']} onClick={() => openLink(`${props.gitlink}`)}>
+                  <FaGithub size={20}/>
+                  Код на GitHub
+               </button>
+            </div>
+         </div>
+      </div>
+   );
+
+   /*return (
       <div className={styles.card} style={{
          backgroundImage: `url(${props.img})`,
          backgroundPosition: 'center',
@@ -28,7 +57,7 @@ function ProjectCard(props) {
             </button>
          </div>
       </div >
-   );
+   );*/
 }
 
 export default ProjectCard;

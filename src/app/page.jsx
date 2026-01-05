@@ -1,5 +1,6 @@
 "use client";
 
+import { FiDownload } from "react-icons/fi";
 import Footer from "@/Components/Footer/Footer.jsx";
 import ProjectCard from "@/Components/ProjectCard/ProjectsCard.jsx";
 import TextType from "@/Components/Animations/TextType.jsx";
@@ -24,7 +25,12 @@ function Home() {
                         cursorCharacter="_"
                      />
                   </h1>
-                  <p>{new Date().getFullYear() - 2009}-летний программист с {new Date().getFullYear() - 2021}-х летним опытом, рекордсмен России по пауэрлифтингу, победитель в YandexCup</p>
+                  <p>{
+                        new Date().getFullYear() - 2006 - (
+                           new Date().getMonth() + 1 < 7 ||
+                           (new Date().getMonth() + 1 === 7 && new Date().getDate() < 16)
+                        )
+                     }-летний программист с {new Date().getFullYear() - 2021}-и летним опытом, рекордсмен России по пауэрлифтингу, победитель в YandexCup</p>
                </div>
             </div>
          </div>
@@ -33,13 +39,54 @@ function Home() {
             <hr />
             <h1 id="projects" className="block-name">Проекты</h1>
             <div className="projects-grid">
-               <ProjectCard name="Telegram бот" img="iuhelper-tg-bot.png" link="https://t.me/iu_helper_bot" gitlink="https://github.com/DenisVyuhin/IU-Helper-v2.0" />
-               <ProjectCard name="Техно-комания" img="project_2.png" link="/projects" gitlink="https://github.com/DenisVyuhin/" />
-               <ProjectCard name="Сайт портфолио" img="rdd.png" link="https://mrhexvel.vercel.app/" gitlink="https://github.com/DenisVyuhin/" />
-               <ProjectCard name="AI-чат прямо на телефоне" img="project_1.jpg" link="/projects" gitlink="https://github.com/DenisVyuhin/" />
-               <ProjectCard name="AI-чат прямо на телефоне" img="project_1.jpg" link="/projects" gitlink="https://github.com/DenisVyuhin/" />
-               <ProjectCard name="AI-чат прямо на телефоне" img="project_1.jpg" link="/projects" gitlink="https://github.com/DenisVyuhin/" />
-               <div className="slider-shadow"></div>
+               <ProjectCard
+                     name="Telegram бот"
+                     description="Telegram-бот для поиска ГДЗ. Есть возможность публикации своих ответов, а также ежегодные призы. Стек: Python, Aiogram, SQLAlchemy, Mistral AI API"
+                     img="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg"
+                     link="https://t.me/iu_helper_bot"
+                     gitlink="https://github.com/DenisVyuhin/IU-Helper-v2.0"
+               />
+
+               <ProjectCard
+                     name="Renneo интернет-магазин"
+                     description="Многостраничный сайт по продаже разных сборок ПК. На сайте есть контактная форма, анимации и база данных с товарами. Стек: Next JS, Tailwind, Rest API, PostrgeSQL"
+                     img="renneo.png"
+                     link="https://renneo.ru/"
+                     gitlink="https://github.com/DenisVyuhin/"
+               />
+
+               <ProjectCard
+                     name="Сайт портфолио"
+                     description="Динамический сайт-портфолио для Hevxel'a. Есть разные режимы тем, UI/UX элементы, а также фоновая музыка. Стек: React JS, SCSS, React Bits"
+                     img="rdd.png"
+                     link="https://mrhexvel.vercel.app/"
+                     gitlink="https://github.com/DenisVyuhin/"
+               />
+
+               <ProjectCard
+                     name="AI-чат прямо на телефоне"
+                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nisi dolorum consequatur praesentium, quos nesciunt adipisci iste vitae ex natus iure esse!"
+                     img="backend-image.png"
+                     link="/projects"
+                     gitlink="https://github.com/DenisVyuhin/"
+               />
+
+               <ProjectCard
+                     name="AI-чат прямо на телефоне"
+                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nisi dolorum consequatur praesentium, quos nesciunt adipisci iste vitae ex natus iure esse!"
+                     img="project_1.jpg"
+                     link="/projects"
+                     gitlink="https://github.com/DenisVyuhin/"
+               />
+
+               <ProjectCard
+                     name="AI-чат прямо на телефоне"
+                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nisi dolorum consequatur praesentium, quos nesciunt adipisci iste vitae ex natus iure esse!"
+                     img="project_1.jpg"
+                     link="/projects"
+                     gitlink="https://github.com/DenisVyuhin/"
+               />
+
             </div>
          </div>
 
@@ -104,7 +151,7 @@ function Home() {
                <hr />
                <div className="resume-container">
                   <a href="backend-image.png" download>
-                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+                     <FiDownload size={20} />
                      Скачать резюме
                   </a>
                </div>

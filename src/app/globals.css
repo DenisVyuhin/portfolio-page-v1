@@ -138,10 +138,15 @@ h1.block-name::before {
    text-align: center;
 }
 .projects-grid {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+   /*background-color: #0066ff;
    display: grid;
    grid-template-columns: repeat(auto-fill, 250px);
    gap: 20px;
-   justify-content: center;
+   justify-content: center;*/
 }
 
 
@@ -367,6 +372,8 @@ h1.block-name::before {
 }
 .about-me-container p {
    margin: 0;
+   letter-spacing: 0.5px;
+   word-spacing: 10%;
 }
 .about-me-container hr {
    width: 300px;
@@ -384,16 +391,19 @@ h1.block-name::before {
    background: linear-gradient(to right, var(--accent-color-1), var(--accent-color-2));
    border-radius: 1000px;
    border: none;
-   width: 150px;
    height: fit-content;
-   padding: 10px 20px;
+   padding: 12px 22px;
    font-family: 'Montserrat', sans-serif;
-   font-size: 14px;
+   font-weight: 450;
+   font-size: 0.9rem;
+   letter-spacing: 0.5px;
+   word-spacing: 10%;
    color: white;
    text-decoration: none;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   gap: 10px;
    cursor: pointer;
    overflow: hidden;
    transition: all .25s;
@@ -526,5 +536,18 @@ h1.block-name::before {
       min-height: 150px;
       margin-top: 30px;
       margin-bottom: 50px;
+   }
+}
+@media (max-width: 880px) {
+   .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 25px 0;
+   }
+}
+@media (max-width: 785px) {
+   .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
    }
 }

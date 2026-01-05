@@ -1,89 +1,105 @@
+
 .card {
    position: relative;
-   width: 250px;
-   height: 350px;
-   overflow: hidden;
+   background-color: var(--background-color);
+   width: calc(100% - 50px);
+   max-width: 1000px;
+   height: 200px;
+   overflow-x: hidden;
    border: 1px solid var(--panel-color);
    border-radius: 15px;
    box-shadow: 0px 4px 10px rgba(0, 0, 0, .125);
-   text-align: center;
    cursor: pointer;
    transition: all .125s;
-}
-
-.card::before {
-   position: absolute;
-   content: '';
-   width: 100%;
-   height: 100%;
-   left: 0;
-   top: 0;
-   background: linear-gradient(to bottom, transparent 70%, black 99%);
-   transition: all .25s;
-}
-
-.card h2 {
-   position: absolute;
-   width: 100%;
-   color: white;
-   bottom: 0;
-   transition: all .25s;
-}
-
-.button-section {
-   position: absolute;
-   width: 100%;
-   height: fit-content;
-   left: 0;
-   bottom: 0;
-}
-
-.button-section button {
-   width: calc(100% - 20px);
-   height: 40px;
    display: flex;
-   justify-content: center;
+   text-align: left;
+   padding: 10px;
+   margin: auto;
+}
+.card h2 {
+   margin-bottom: 0;
+   margin-top: 15px;
+}
+.card:hover .image {
+   background-color: red;
+}
+
+.image {
+   min-width: 350px;
+   height: 200px;
+   border-radius: 5px;
+}
+
+.right-side {
+   padding: 0 20px;
+}
+
+.buttons-container {
+   position: absolute;
+   width: fit-content;
+   height: fit-content;
+   display: flex;
+   gap: 15px;
+   bottom: 20px;
+}
+.buttons-container button {
+   padding: 10px 25px;
+   display: flex;
+   gap: 10px;
    align-items: center;
-   margin: 10px auto 10px auto;
-   background-color: var(--accent-color-1);
-   border: 1px solid var(--accent-color-1);
    border-radius: 10px;
-   color: white;
+   font-family: 'Montserrat';
+   font-weight: 500;
+   font-size: 0.8rem;
    cursor: pointer;
    transition: all .25s;
-   opacity: 0;
-   filter: blur(10px);
 }
-
-.button-section button.github {
-   background-color: black;
-   border: 2px solid black;
+.buttons-container button:hover {
+   transform: scale(1.05);
 }
-
-.button-section button:hover {
-   background-color: rgba(0, 0, 0, .25);
-   backdrop-filter: blur(10px);
-   color: var(--accent-color-1);
+.buttons-container button.github {
+   background-color: var(--background-color);
+   color: var(--main-text);
+   border: none;
+   filter: invert(1);
 }
-
-.button-section button.github:hover {
+.buttons-container button.open {
+   background: linear-gradient(to left, var(--accent-color-1), var(--accent-color-2));
    color: white;
+   border: none;
 }
 
-.button-section svg {
-   margin-right: 10px;
-}
+@media (max-width: 880px) {
+   .card {
+      display: block;
+      height: 470px;
+   }
 
-.card:hover {
-   transform: scale(1.025);
-}
+   .image {
+      position: static;
+      width: 100%;
+      min-width: 50px;
+      box-sizing: border-box;
+   }
 
-.card:hover button {
-   opacity: 1;
-   filter: none;
-}
+   .right-side {
+      padding: 0px 10px;
+   }
 
-.card:hover h2 {
-   opacity: 0;
-   filter: blur(10px);
+   .right-side h2 {
+      margin-top: 20px;
+   }
+
+   .buttons-container {
+      box-sizing: border-box;
+      max-width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+   }
+}
+@media (max-width: 785px) {
+   .card {
+      width: 400px;
+      height: 420px;
+   }
 }
