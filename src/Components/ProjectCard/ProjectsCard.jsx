@@ -3,6 +3,7 @@
 import styles from './ProjectCard.module.css';
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
+import { useState, useEffect } from "react";
 
 
 function ProjectCard(props) {
@@ -17,20 +18,20 @@ function ProjectCard(props) {
             backgroundImage: `url(${props.img})`,
             backgroundPosition: 'center',
             backgroundSize: 'cover',
-            backgroundRepeat: 'no-repeat'
+            backgroundRepeat: 'no-repeat',
          }}></div>
 
          <div className={styles['right-side']}>
             <h2>{props.name}</h2>
             <p>{props.description}</p>
-            
+
             <div className={styles["buttons-container"]}>
                <button className={styles['open']} onClick={() => openLink(`${props.link}`)}>
-                  <FaExternalLinkAlt size={15}/>
+                  <FaExternalLinkAlt size={15} />
                   Открыть
                </button>
                <button className={styles['github']} onClick={() => openLink(`${props.gitlink}`)}>
-                  <FaGithub size={20}/>
+                  <FaGithub size={20} />
                   Код на GitHub
                </button>
             </div>

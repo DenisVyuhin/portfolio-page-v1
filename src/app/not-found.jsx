@@ -11,7 +11,12 @@ function NotFound() {
             amplitude={0.5}
             speed={1.0}
          />*/}
-         <div style={{ width: '100%', height: '100%', position: 'absolute' }}>
+         {<div style={{
+               width: '100%',
+               height: '100%',
+               position: 'absolute',
+               backgroundColor: 'var(--background-color)'
+            }}>
             <Particles
                particleColors={['#0095ff', '#0095ff']}
                particleCount={200}
@@ -22,7 +27,7 @@ function NotFound() {
                alphaParticles={false}
                disableRotation={false}
             />
-         </div>
+         </div>}
          <div className="not-found-content">
             <h1>404</h1>
             <p>Упс! Похоже этой страницы, пока не существует...</p>

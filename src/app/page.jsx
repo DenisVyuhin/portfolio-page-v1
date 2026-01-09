@@ -42,7 +42,7 @@ function Home() {
                <ProjectCard
                      name="Telegram бот"
                      description="Telegram-бот для поиска ГДЗ. Есть возможность публикации своих ответов, а также ежегодные призы. Стек: Python, Aiogram, SQLAlchemy, Mistral AI API"
-                     img="telegram-bot.jpg"
+                     img="telegram-bot.webp"
                      link="https://t.me/iu_helper_bot"
                      gitlink="https://github.com/DenisVyuhin/IU-Helper-v2.0"
                />
@@ -50,7 +50,7 @@ function Home() {
                <ProjectCard
                      name="Интернет-магазин"
                      description="Многостраничный сайт по продаже разных сборок ПК. На сайте есть контактная форма, анимации и база данных с товарами. Стек: Next JS, Tailwind, Rest API, PostrgeSQL"
-                     img="renneo.png"
+                     img="renneo.webp"
                      link="https://renneo.ru/"
                      gitlink="https://github.com/DenisVyuhin/"
                />
@@ -58,7 +58,7 @@ function Home() {
                <ProjectCard
                      name="Сайт-портфолио"
                      description="Динамический сайт-портфолио для Hevxel'a. Есть разные режимы тем, UI/UX элементы, а также фоновая музыка. Стек: React JS, SCSS, React Bits"
-                     img="hexvel.png"
+                     img="hexvel.webp"
                      link="https://hexvel.vercel.app/"
                      gitlink="https://github.com/DenisVyuhin/"
                />
@@ -66,7 +66,7 @@ function Home() {
                <ProjectCard
                      name="Boston Dynamics"
                      description="Лендинг для компании Boston Dymanics. Boston Dynamics разрабатывает серию динамичных, высокомобильных роботов, включая BigDog, Spot, Atlas и Handle. Стек: HTML, CSS, PHP, JS, SQL"
-                     img="boston-dynamics.png"
+                     img="boston-dynamics.webp"
                      link="https://bostondynamics.com/products/atlas/"
                      gitlink="https://github.com/DenisVyuhin/"
                />
@@ -74,7 +74,7 @@ function Home() {
                <ProjectCard
                      name="Соцсеть"
                      description="Twitblit - ействительно социальная сеть, сочетающая лучшие качества Reddit и Twitter. В сети активно участвуют ИИ боты, которые могут писать посты и обсуждать интересные темы."
-                     img="twitblit.jpg"
+                     img="twitblit.webp"
                      link="https://twitblit.ru/"
                      gitlink="https://github.com/DenisVyuhin/"
                />
@@ -82,7 +82,7 @@ function Home() {
                <ProjectCard
                      name="Игровой телеграм-бот"
                      description="Проект развлекательного бота для пользователей Telegram. Игровая валюта, множество игр. Интеграции ИИ и ежегодные розыгрыши. Стек: Python, Aiogram, PostgreSQL, SLQAlchemy, Gemini AI"
-                     img="kazinkov-bot.jpg"
+                     img="kazinkov-bot.webp"
                      link="/projects"
                      gitlink="https://github.com/DenisVyuhin/"
                />
@@ -90,7 +90,7 @@ function Home() {
                <ProjectCard
                      name="NeuroGPT"
                      description="Чат с разными нейросетями: Gemini, ChatGPT, DeepSeek, Claude AI. Приложение написано прямо на телефоне, ИИ модели - установлены локально, поэтому интернет не требуется. Стек: Processing (Java library)"
-                     img="project_1.jpg"
+                     img="project_1.webp"
                      link="/projects"
                      gitlink="https://github.com/DenisVyuhin/"
                />

@@ -339,7 +339,7 @@ h1.block-name::before {
    width: 141%;
    height: 141%;
    position: absolute;
-   background-image: url("../../public/frontend-image.png");
+   background-image: url("../../public/frontend-image.webp");
    background-position: center;
    background-size: cover;
    border-radius: 13px;
@@ -350,7 +350,7 @@ h1.block-name::before {
    width: 141%;
    height: 141%;
    position: absolute;
-   background-image: url("../../public/backend-image.png");
+   background-image: url("../../public/backend-image.webp");
    background-position: center;
    background-size: cover;
    border-radius: 13px;
@@ -361,7 +361,7 @@ h1.block-name::before {
    width: 141%;
    height: 141%;
    position: absolute;
-   background-image: url("../../public/devops-image.png");
+   background-image: url("../../public/devops-image.webp");
    background-position: center;
    background-size: cover;
    border-radius: 13px;
