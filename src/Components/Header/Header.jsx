@@ -4,16 +4,13 @@ import Link from 'next/link';
 import styles from './Header.module.css';
 import React, { useState, useEffect } from 'react';
 
+import { useTheme } from "next-themes"
+
 
 function Header() {
-   let darkMode = "dark";
+   const { resolvedTheme, setTheme } = useTheme();
 
-   if (typeof window !== "undefined") {
-      darkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-   }
-
-   const [theme, setTheme] = useState(darkMode ? "dark" : "light");
-
+   // Изменяем вид header при скроле
    if (typeof window !== "undefined") {
       window.addEventListener("scroll", () => {
          let pageY = window.scrollY;
@@ -33,20 +30,6 @@ function Header() {
             document.getElementById("header").style.boxShadow = "none";
          }
       });
-   }
-
-   // Принудительно меняем фон у body
-   useEffect(() => {
-      document.body.style.backgroundColor = "var(--background-color)";
-   }, [theme]);
-
-   const handleButtonClick = () => {
-      const html = document.documentElement;
-      let currentTheme = html.getAttribute("theme");
-      let newTheme = currentTheme === "dark" ? "light" : "dark";
-
-      setTheme(newTheme);
-      html.setAttribute("theme", newTheme);
    }
 
    const point = <>
@@ -78,7 +61,7 @@ function Header() {
                <a href='#about-me'>Обо мне</a>
                <a href='#contacts'>Контакты</a>
             </nav>
-            <button onClick={handleButtonClick}>
+            <button onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}>
                <svg className={styles.icon} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M9.173 14.83a4 4 0 1 1 5.657 -5.657" /><path d="M11.294 12.707l.174 .247a7.5 7.5 0 0 0 8.845 2.492a9 9 0 0 1 -14.671 2.914" /><path d="M3 12h1" /><path d="M12 3v1" /><path d="M5.6 5.6l.7 .7" /><path d="M3 21l18 -18" /></svg>
             </button>
          </header>

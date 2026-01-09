@@ -42,13 +42,13 @@ function Home() {
                <ProjectCard
                      name="Telegram бот"
                      description="Telegram-бот для поиска ГДЗ. Есть возможность публикации своих ответов, а также ежегодные призы. Стек: Python, Aiogram, SQLAlchemy, Mistral AI API"
-                     img="https://www.bigfootdigital.co.uk/wp-content/uploads/2020/07/image-optimisation-scaled.jpg"
+                     img="telegram-bot.jpg"
                      link="https://t.me/iu_helper_bot"
                      gitlink="https://github.com/DenisVyuhin/IU-Helper-v2.0"
                />
 
                <ProjectCard
-                     name="Renneo интернет-магазин"
+                     name="Интернет-магазин"
                      description="Многостраничный сайт по продаже разных сборок ПК. На сайте есть контактная форма, анимации и база данных с товарами. Стек: Next JS, Tailwind, Rest API, PostrgeSQL"
                      img="renneo.png"
                      link="https://renneo.ru/"
@@ -56,32 +56,40 @@ function Home() {
                />
 
                <ProjectCard
-                     name="Сайт портфолио"
+                     name="Сайт-портфолио"
                      description="Динамический сайт-портфолио для Hevxel'a. Есть разные режимы тем, UI/UX элементы, а также фоновая музыка. Стек: React JS, SCSS, React Bits"
-                     img="rdd.png"
-                     link="https://mrhexvel.vercel.app/"
+                     img="hexvel.png"
+                     link="https://hexvel.vercel.app/"
                      gitlink="https://github.com/DenisVyuhin/"
                />
 
                <ProjectCard
-                     name="AI-чат прямо на телефоне"
-                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nisi dolorum consequatur praesentium, quos nesciunt adipisci iste vitae ex natus iure esse!"
-                     img="backend-image.png"
+                     name="Boston Dynamics"
+                     description="Лендинг для компании Boston Dymanics. Boston Dynamics разрабатывает серию динамичных, высокомобильных роботов, включая BigDog, Spot, Atlas и Handle. Стек: HTML, CSS, PHP, JS, SQL"
+                     img="boston-dynamics.png"
+                     link="https://bostondynamics.com/products/atlas/"
+                     gitlink="https://github.com/DenisVyuhin/"
+               />
+
+               <ProjectCard
+                     name="Соцсеть"
+                     description="Twitblit - ействительно социальная сеть, сочетающая лучшие качества Reddit и Twitter. В сети активно участвуют ИИ боты, которые могут писать посты и обсуждать интересные темы."
+                     img="twitblit.jpg"
+                     link="https://twitblit.ru/"
+                     gitlink="https://github.com/DenisVyuhin/"
+               />
+
+               <ProjectCard
+                     name="Игровой телеграм-бот"
+                     description="Проект развлекательного бота для пользователей Telegram. Игровая валюта, множество игр. Интеграции ИИ и ежегодные розыгрыши. Стек: Python, Aiogram, PostgreSQL, SLQAlchemy, Gemini AI"
+                     img="kazinkov-bot.jpg"
                      link="/projects"
                      gitlink="https://github.com/DenisVyuhin/"
                />
 
                <ProjectCard
-                     name="AI-чат прямо на телефоне"
-                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nisi dolorum consequatur praesentium, quos nesciunt adipisci iste vitae ex natus iure esse!"
-                     img="project_1.jpg"
-                     link="/projects"
-                     gitlink="https://github.com/DenisVyuhin/"
-               />
-
-               <ProjectCard
-                     name="AI-чат прямо на телефоне"
-                     description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, nisi dolorum consequatur praesentium, quos nesciunt adipisci iste vitae ex natus iure esse!"
+                     name="NeuroGPT"
+                     description="Чат с разными нейросетями: Gemini, ChatGPT, DeepSeek, Claude AI. Приложение написано прямо на телефоне, ИИ модели - установлены локально, поэтому интернет не требуется. Стек: Processing (Java library)"
                      img="project_1.jpg"
                      link="/projects"
                      gitlink="https://github.com/DenisVyuhin/"
@@ -143,7 +151,7 @@ function Home() {
             <h1 id="about-me" className="block-name">Обо мне</h1>
             <div className="about-me-container">
                <p>
-                  👋 <b>Меня зовут Денис</b> — я любознательный, настойчивый и творческий человек, который с детства любит разбираться, как всё устроено. Ещё с ранних лет я увлекался LEGO, роботами и самостоятельно конструировал и программировал своих роботов без инструкций. Позже занялся авиа-моделированием и создал уникальный глиссер, который был включён в программу обучения. Я рекордсмен своего города по пауэрлифтингу и имею официальные корочки.
+                  👋 <b style={{color: 'var(--main-text)'}}>Меня зовут Денис</b> — я любознательный, настойчивый и творческий человек, который с детства любит разбираться, как всё устроено. Ещё с ранних лет я увлекался LEGO, роботами и самостоятельно конструировал и программировал своих роботов без инструкций. Позже занялся авиа-моделированием и создал уникальный глиссер, который был включён в программу обучения. Я рекордсмен своего города по пауэрлифтингу и имею официальные корочки.
                   <br />
                   <br />
                   Помимо спорта я активно развиваюсь в IT: самостоятельно заработал 300.000₽ на MacBook, создал полноценного Telegram-бота-помощника с ИИ-ассистентом, который принёс мне более 50.000₽. Сегодня я продолжаю изучать нейросети, программирование, разработку игр и сайтов, используя Java, Processing, Python и другие.

@@ -1,6 +1,8 @@
-import { SpeedInsights } from "@vercel/speed-insights/next"
-import ThemeProvider from "@/Utils/ThemeProvider.jsx";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+//import ThemeProvider from "@/Utils/ThemeProvider.jsx";
 import { Montserrat } from "next/font/google";
+//import { ThemeProvider } from "next-themes";
+import Provider from "@/Utils/ThemeProvider.jsx";
 import "./globals.css";
 import Header from "@/Components/Header/Header.jsx";
 import Particles from "@/Components/Animations/Particles.jsx";
@@ -22,26 +24,27 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
    return (
-      <html lang="ru" className={montserrat.variable}>
+      <html lang="ru" className={montserrat.variable} suppressHydrationWarning>
          <body>
-            <Header />
-            <div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: '-999' }}>
-               <Particles
-                  particleColors={['#0095ff', '#0095ff']}
-                  particleCount={200}
-                  particleSpread={10}
-                  speed={0.1}
-                  particleBaseSize={50}
-                  moveParticlesOnHover={true}
-                  alphaParticles={false}
-                  disableRotation={false}
-               />
-            </div>
 
-            <ThemeProvider>
+            <Provider>
+               <Header />
+               {<div style={{ width: '100%', height: '100%', position: 'absolute', zIndex: '-999'}}>
+                  <Particles
+                     particleColors={['#0095ff', '#0095ff']}
+                     particleCount={200}
+                     particleSpread={10}
+                     speed={0.1}
+                     particleBaseSize={50}
+                     moveParticlesOnHover={true}
+                     alphaParticles={false}
+                     disableRotation={false}
+                  />
+               </div>}
                {children}
-            </ThemeProvider>
-            <SpeedInsights/>
+            </Provider>
+
+            <SpeedInsights />
          </body>
       </html>
    );

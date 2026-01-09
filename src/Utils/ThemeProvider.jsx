@@ -1,18 +1,17 @@
 "use client";
 
-import { useEffect } from "react";
-import useSystemTheme from "./GetSystemTheme.jsx";
+import { ThemeProvider } from "next-themes";
 
-function ThemeProvider({ children }) {
-   const theme = useSystemTheme();
+function Provider({ children }) {
+   return (
+      <ThemeProvider
+         attribute="data-theme"
+         defaultTheme="dark"
+         enableSystem={false}
+      >
+         {children}
+      </ThemeProvider>
+   );
+};
 
-   useEffect(() => {
-      if (typeof document != "undefined") {
-         document.documentElement.setAttribute("theme", theme);
-      }
-   }, [theme]);
-
-   return children;
-}
-
-export default ThemeProvider;
+export default Provider;

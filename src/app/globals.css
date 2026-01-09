@@ -4,14 +4,14 @@
 :root {
    --background-color: #0a0a0c;
    --blur-background-color: rgba(10, 10, 12, .75); /* специально для тех блоков, которые имеют полупрозрачный фон и размытие заднего фона */
-   --panel-color: #1f1f21;
+   --panel-color: #28282b;
    --button-color: #303033;
    --main-text: #f2f2f2;
-   --simple-text: #b3b3b3;
+   --simple-text: #8a8a8a;
    --accent-color-1: #0095ff;
    --accent-color-2: #0070e0;
 }
-[theme="light"] {
+html[data-theme="light"] {
    --background-color: #ffffff;
    --blur-background-color: rgba(255, 255, 255, .75); /* специально для тех блоков, которые имеют полупрозрачный фон и размытие заднего фона */
    --panel-color: #e6e6e6;
@@ -41,6 +41,7 @@ body {
    overflow-x: hidden;
    height: 100%;
    transition: all .125s;
+   animation: bodystart .5s;
 }
 main {
    width: 100%;
@@ -225,7 +226,7 @@ h1.block-name::before {
    border: 1px solid var(--panel-color);
    border-radius: 10px;
    margin: 7px 7px 0 0;
-   padding: 7px;
+   padding: 7px 12px;
 }
 .technology-container {
    cursor: pointer;
@@ -241,66 +242,82 @@ h1.block-name::before {
 .technology.html:hover {
    box-shadow: 0px 0px 20px #ff5500bb;
    border: 1px solid #ff5500;
+   color: #ff5500;
 }
 .technology.css:hover {
    box-shadow: 0px 0px 20px #0066ffbb;
    border: 1px solid #0066ff;
+   color: #0066ff;
 }
 .technology.js:hover {
    box-shadow: 0px 0px 20px #ffaa00bb;
    border: 1px solid #ffaa00;
+   color: #ffaa00;
 }
 .technology.p5js:hover {
    box-shadow: 0px 0px 20px #ff0044bb;
    border: 1px solid #ff0044;
+   color: #ff0044;
 }
 .technology.react:hover {
    box-shadow: 0px 0px 20px #00aaffbb;
    border: 1px solid #00aaff;
+   color: #00aaff;
 }
 .technology.next:hover {
    box-shadow: 0px 0px 20px #00ddffbb;
    border: 1px solid #00ddff;
+   color: #00ddff;
 }
 .technology.tailwind:hover {
    box-shadow: 0px 0px 20px #7700ffbb;
    border: 1px solid #7700ff;
+   color: #7700ff;
 }
 .technology.python:hover {
    box-shadow: 0px 0px 20px #6fff00bb;
    border: 1px solid #6fff00;
+   color: #6fff00;
 }
 .technology.django:hover {
    box-shadow: 0px 0px 20px #00ff99bb;
    border: 1px solid #00ff99;
+   color: #00ff99;
 }
 .technology.mysql:hover {
    box-shadow: 0px 0px 20px #008cffbb;
    border: 1px solid #008cff;
+   color: #008cff;
 }
 .technology.mongodb:hover {
    box-shadow: 0px 0px 20px #11ff00bb;
    border: 1px solid #6aff00;
+   color: #6aff00;
 }
 .technology.node:hover {
    box-shadow: 0px 0px 20px #9dff00bb;
    border: 1px solid #9dff00;
+   color: #9dff00;
 }
 .technology.docker:hover {
    box-shadow: 0px 0px 20px #0091ffbb;
    border: 1px solid #0091ff;
+   color: #0091ff;
 }
 .technology.github:hover {
    box-shadow: 0px 0px 20px #b300ffbb;
    border: 1px solid #b300ff;
+   color: #b300ff;
 }
 .technology.figma:hover {
    box-shadow: 0px 0px 20px #ff0040bb;
    border: 1px solid #ff0040;
+   color: #ff0040;
 }
 .technology.ai:hover {
    box-shadow: 0px 0px 20px #ff0080bb;
    border: 1px solid #ff0080;
+   color: #ff0080;
 }
 .stack-image {
    background-color: var(--background-color);
@@ -509,7 +526,14 @@ h1.block-name::before {
       transform: translateY(-10px);
    }
 }
-
+@keyframes bodystart {
+   from {
+      opacity: 0;
+   }
+   to {
+      opacity: 1;
+   }
+}
 
 
 /* MEDIA REQUEST */

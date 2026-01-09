@@ -22,6 +22,7 @@
 }
 .card p {
    word-spacing: 7%;
+   font-size: 0.95rem;
 }
 .card:hover .image {
    background-color: red;
