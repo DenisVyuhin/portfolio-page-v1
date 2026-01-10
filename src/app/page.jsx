@@ -83,7 +83,7 @@ function Home() {
                      name="Игровой телеграм-бот"
                      description="Проект развлекательного бота для пользователей Telegram. Игровая валюта, множество игр. Интеграции ИИ и ежегодные розыгрыши. Стек: Python, Aiogram, PostgreSQL, SLQAlchemy, Gemini AI"
                      img="kazinkov-bot.webp"
-                     link="/projects"
+                     link="https://t.me/KazinkovBot"
                      gitlink="https://github.com/DenisVyuhin/"
                />
 
