@@ -14,8 +14,7 @@ function NotFound() {
          {<div style={{
                width: '100%',
                height: '100%',
-               position: 'absolute',
-               backgroundColor: 'var(--background-color)'
+               position: 'absolute'
             }}>
             <Particles
                particleColors={['#0095ff', '#0095ff']}
